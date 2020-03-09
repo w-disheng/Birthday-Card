@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+		<!-- <link type="text/css" rel="stylesheet" href="normalize.css" /> -->
+		<style>
+			/* Global layout */
+			.Wrapper {
+				width: 950px;
+				margin: 0 auto;
+			}
+
+			/* Form layout */
+			form {
+				position: relative;
+				top: 250px;
+			}
+			.birthday-form {
+				width: 500px;
+				margin: 0 auto;
+				border: none;
+			}
+			fieldset > legend {
+				font-family: 'Baloo Chettan 2', cursive;
+				text-align: center;
+				font-size: 2em;
+				margin-bottom: 7px;
+				padding-right: 29px;
+			}
+			.buttom-image {
+				display: inline;
+				float: right;
+				position: relative;
+				bottom: 58px;
+				right: 130px;
+			}
+			.close {
+				background-color: inherit;
+				border: none;
+				cursor: pointer;
+			}
+			.close img {
+				width: 20px;
+			}
+			.main-label {
+				font-weight: 700;
+        font-family: 'Baloo Chettan 2', cursive;
+			}
+			input[id="birthday"] {
+				width: 169px;
+			}
+			.main-input {
+				padding: 10px;
+				margin-top: -20px;
+			}
+			.main-input>input {
+				border: 3px solid inherit;
+				border-radius: 10px;
+			}
+			.main-input>textarea {
+				border: 2px solid inherit;
+				border-radius: 6px;
+			}
+			input[type="submit"] {
+				background: #0066A2;
+				color: white;
+				border-color: #0066A2;
+				height: 50px;
+				width: 100px;
+				font: bold 15px 'Baloo Chettan 2', cursive;
+				text-shadow:none;
+				position: relative;
+				left: 180px;
+				top: 7px;
+				cursor: pointer;
+			}
+		</style>
+		<title>Birthday Add</title>
+	</head>
+
+	<body>
+		<div class="Wrapper"> <!-- start of Wrapper div -->
+			<form>
+				<fieldset class="birthday-form">
+					<legend>Birthday Add</legend>
+					<div class="buttom-image"> <!-- start of button image div -->
+						<button class="close"><img src="images/pngtree-icon-close-button-png-image_1357746.jpg" alt="button-image"></button>
+					</div> <!-- end of button-image div -->
+					<div class="main-input">
+						<label for="name" class="main-label">
+							Name:
+						</label><br />
+						<input type="text" name="name" id="name" required /><br />
+						<label for="birthday" class="main-label">
+							Birthday:
+						</label><br />
+						<input type="date" name="birthday" id="birthday" required /><br />
+						<label for="words" class="main-label">
+							Words:
+						</label><br />
+						<textarea name="words" cols="60" rows="6" placeholder="Is there anything you wanna say to the person?"></textarea><br />
+						<input type="submit" value="submit">
+					</div>
+				</fieldset>
+			</form>
+		</div> <!-- end of Wrapper div -->
+	</body>
+</html>
