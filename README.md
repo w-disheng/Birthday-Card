@@ -1,9 +1,9 @@
 # Birthday-Card
 This project is to add birthday card which helps to memorize people's birthday.
 
-Files:
- 	images // contain images about the page
-	README.md 	 
-	index.html 	 
-	index2.html  
-	normalize.css
+<p>Files:</p>
+ 	images // contain images about the page <br />
+	README.md 	  <br />
+	index.html 	  <br />
+	index2.html   <br />
+	normalize.css <br />
