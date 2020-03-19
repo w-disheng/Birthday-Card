@@ -1,0 +1,170 @@
+/* Global layout */
+
+* {
+	box-sizing: border-box;
+}
+
+.Wrapper {
+	font-family: 'Baloo Chettan 2', cursive;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+/* Form layout */
+
+form {
+	position: relative;
+	top: 250px;
+}
+
+.main-form {
+	position: relative;
+	top:-30px;
+	font-size:30px;
+	width: 341px;
+}
+fieldset{
+	border:none;
+}
+
+legend {
+	position: relative;
+	font-weight:900;
+	font-size: 1.5em;
+}
+
+
+/* button layout */
+legend button {
+	position: absolute;
+	right: 0;
+	transform: translate(120%, -50%);
+	z-index: 2;
+}
+#show {
+	margin-right: 14px;
+	padding: 7px;
+	bottom: 0px;
+	right: 6px;
+}
+
+.btn {
+	cursor: pointer;
+	background-color: inherit;
+	border: 0.px solid #aaa;
+	border-radius: 20px;
+	font-size: 15px;
+	margin-top: 20px;
+	padding: 10px 15px;
+}
+
+.btn-small {
+	font-size: 12px;
+	padding: 5px 10px;
+}
+
+.btn-ghost {
+	border: none;
+	background-color: transparent;
+}
+
+.clear {
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+}
+
+/* card layout */
+.cards {
+	perspective: 1000px;
+	position: relative;
+	top: -45px;
+	height: 300px;
+	width: 500px;
+	max-width: 100%;
+	
+	border:3px dashed blue;
+}
+
+/* navigation layout */
+.navigation {
+  	display: flex;
+	position: absolute;
+	bottom: 150px;
+  	margin: 20px 0;
+}
+
+.navigation .nav-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navigation p {
+  margin: 0 50px;
+}
+
+/* after flip change implement js
+.birthday-form {
+	width: 500px;
+	margin: 0 auto;
+	border: none;
+}
+fieldset > legend {
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 7px;
+	padding-right: 29px;
+}
+.buttom-image {
+	display: inline;
+	float: right;
+	position: relative;
+	bottom: 58px;
+	right: 130px;
+}
+.close {
+	background-color: inherit;
+	border: none;
+	cursor: pointer;
+}
+.close img {
+	width: 20px;
+}
+.main-label {
+	font-weight: 700;
+font-family: 'Baloo Chettan 2', cursive;
+}
+input[id="birthday"] {
+	width: 169px;
+}
+.main-input {
+	padding: 10px;
+	margin-top: -20px;
+}
+.main-input>input {
+	border: 3px solid inherit;
+	border-radius: 10px;
+}
+.main-input>textarea {
+	border: 2px solid inherit;
+	border-radius: 6px;
+}
+input[type="submit"] {
+	background: #0066A2;
+	color: white;
+	border-color: #0066A2;
+	height: 50px;
+	width: 100px;
+	font: bold 15px 'Baloo Chettan 2', cursive;
+	text-shadow:none;
+	position: relative;
+	left: 180px;
+	top: 7px;
+	cursor: pointer;
+}*/

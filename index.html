@@ -2,91 +2,70 @@
 
 <html>
 	<head>
-		<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+		  rel="stylesheet"
+		  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+		  integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+		  crossorigin="anonymous"
+		/>
+		<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet" />
 		<!-- <link type="text/css" rel="stylesheet" href="normalize.css" /> -->
-		<style>
-			/* Global layout */
-			.Wrapper {
-				width: 950px;
-				margin: 0 auto;
-			}
-
-			/* Form layout */
-			form {
-				position: relative;
-				top: 250px;
-			}
-			.birthday-form {
-				width: 500px;
-				margin: 0 auto;
-				border: none;
-			}
-			fieldset > legend {
-				font-family: 'Baloo Chettan 2', cursive;
-				text-align: center;
-				font-size: 2em;
-				margin-bottom: 7px;
-				padding-right: 29px;
-			}
-			.buttom-image {
-				display: inline;
-				float: right;
-				position: relative;
-				bottom: 58px;
-				right: 130px;
-			}
-			.close {
-				background-color: inherit;
-				border: none;
-				cursor: pointer;
-			}
-			.close img {
-				width: 20px;
-			}
-			.main-label {
-				font-weight: 700;
-        font-family: 'Baloo Chettan 2', cursive;
-			}
-			input[id="birthday"] {
-				width: 169px;
-			}
-			.main-input {
-				padding: 10px;
-				margin-top: -20px;
-			}
-			.main-input>input {
-				border: 3px solid inherit;
-				border-radius: 10px;
-			}
-			.main-input>textarea {
-				border: 2px solid inherit;
-				border-radius: 6px;
-			}
-			input[type="submit"] {
-				background: #0066A2;
-				color: white;
-				border-color: #0066A2;
-				height: 50px;
-				width: 100px;
-				font: bold 15px 'Baloo Chettan 2', cursive;
-				text-shadow:none;
-				position: relative;
-				left: 180px;
-				top: 7px;
-				cursor: pointer;
-			}
-		</style>
-		<title>Birthday Add</title>
+		<link type="text/css" rel=stylesheet href="master.css" />
+		<title>Memory Cards</title>
 	</head>
 
 	<body>
 		<div class="Wrapper"> <!-- start of Wrapper div -->
-			<form>
-				<fieldset class="birthday-form">
-					<legend>Birthday Add</legend>
-					<div class="buttom-image"> <!-- start of button image div -->
-						<button class="close"><img src="images/pngtree-icon-close-button-png-image_1357746.jpg" alt="button-image"></button>
-					</div> <!-- end of button-image div -->
+			
+			<form  class="main-form">
+				<fieldset>
+					
+					<div class="heading"> <!-- start of heading -->
+						<legend>
+							Memory Cards
+							<button class="btn btn-small" id="show"><i class="fas fa-plus"></i>Add New Card</button>
+						</legend>
+					</div> <!-- end of the heading -->
+					
+				</fieldset>
+			</form>
+			<div class="cards"></div>
+			<div class="navigation"> <!-- start of button-nav div -->
+						<button id="prev" class="nav-button"><i class="fas fa-arrow-left"></i></button>
+						<p id="current"></p>
+						<button id="next" class="nav-button"><i class="fas fa-arrow-right"></i></button>
+					</div> <!-- end of button-nav div -->
+<!-- implement after js
+			<form  class="main-form2">
+				<fieldset class="flip-content">
+					<div class="heading">
+						<legend>
+							Add New Card
+							<button id="hide" class="btn btn-small btn-ghost">
+							<i class="fas fa-times"></i>
+							</button>
+						</legend>
+					</div>
+					<label for="question">Question</label>
+					<textarea id="question" placeholder="Enter Question..."></textarea>
+
+					<label for="answer">Answer</label>
+					<textarea id="answer" placeholder="Enter Answer..."></textarea>
+
+					<button id="add-card" class="btn">Add Card</button>
+				</fieldset>
+				
+			</form> -->
+			<button id="clear" class="clear btn"><i class="fas fa-trash"></i>Clear Cards</button>
+		</div> <!-- end of Wrapper div -->
+	</body>
+</html>
+
+
+<!--
 					<div class="main-input">
 						<label for="name" class="main-label">
 							Name:
@@ -100,10 +79,4 @@
 							Words:
 						</label><br />
 						<textarea name="words" cols="60" rows="6" placeholder="Is there anything you wanna say to the person?"></textarea><br />
-						<input type="submit" value="submit">
-					</div>
-				</fieldset>
-			</form>
-		</div> <!-- end of Wrapper div -->
-	</body>
-</html>
+-->
